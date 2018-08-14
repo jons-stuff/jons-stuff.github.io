@@ -1,0 +1,14 @@
+<sidebar class="sidebar" id="sidebar">
+	<div class="sidebar-mobile">
+        <div class="topbar">
+            {% include navigation-title.html %}
+            <img src="{{ "/assets/images/menu.svg" | relative_url }}" class="menu-icon" id="menu" />
+            <img src="{{ "/assets/images/close.svg" | relative_url }}" class="close-icon" id="close" />
+        </div>
+        {% include navigation.html %}
+	</div>
+	<div class="sidebar-main">
+        {% include navigation-title.html %}
+        {% include navigation.html %}
+	</div>
+</sidebar>

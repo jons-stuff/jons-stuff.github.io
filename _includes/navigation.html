@@ -1,0 +1,11 @@
+{% capture html %}
+<ul class="navigation" id="navigation">
+	{% for nav in site.data.nav %}
+        <li>
+            <a href="{{ nav.url }}">
+                {{ nav.title }}
+            </a>
+        </li>
+	{% endfor %}
+</ul>
+{% endcapture %}{{ html | strip_newlines | replace:'    ','' | replace:'    ','' | replace:'  ',' ' }}
